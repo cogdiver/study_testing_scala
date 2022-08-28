@@ -2,9 +2,10 @@ name := "studyTestingScala"
 
 scalaVersion := "2.12.16"
 
+
 val scalatestVersion = "3.2.13"
 val test_dependencies = Seq(
-    "org.scalatest" %% "scalatest" % scalatestVersion,// % "test",
+    "org.scalatest" %% "scalatest" % scalatestVersion % "test",
     // "org.scalatest" %% "scalatest-funsuite" % scalatestVersion % "test",
     // "org.scalatest" %% "scalatest-flatspec" % scalatestVersion % "test",
     // "org.scalatest" %% "scalatest-funspec" % scalatestVersion % "test",
@@ -13,7 +14,6 @@ val test_dependencies = Seq(
 )
 
 val other_dependencies = Seq(
-    "org.scoverage" % "sbt-scoverage" % "1.5.0"
 )
 
 val dependencies = Seq(
